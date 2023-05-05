@@ -54,31 +54,6 @@ list = [0, 1]
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
 })
-let numberOfEnemies = 0
-var numberOfEnemies = 0 
-let ninja: Sprite = null
-ninja = sprites.create(img`
-    . . . . f f f f f . . . 
-    . . . f f f f f f f . . 
-    f . f f f f f f f f f . 
-    . f f b f f f f f b f . 
-    f . f d 1 1 b 1 1 d f . 
-    . . f f 1 f d f 1 f f . 
-    . . . f f f f f f f . . 
-    . . . . f f f f f . . . 
-    . . . f f f f f f f . . 
-    . . f f f f f f f f f . 
-    . . f f f f f f f f f . 
-    . f . f f f f f f f . f 
-    . f . f f f f f f f . f 
-    . . . . f f f f f . . . 
-    . . . . f f . f f . . . 
-    . . . f f f . f f f . . 
-    `, SpriteKind.Ninja)
-ninja.setPosition(randint(0, 160), randint(0, 120))
-let list = []
-
-}
 
     myDart = darts.create(img`
         . . . . . . . . . . . . . . . . 
@@ -109,10 +84,12 @@ Balloons.importBalloons()
 Balloons.balloonGrid()
 Animation.balloonAnimation()
 createDart()
+info.setScore(1000 - game.runtime() / 100)
 
 ```
 
 ```blockconfig.global
+info.setScore(1000 - game.runtime() / 100)
 myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
