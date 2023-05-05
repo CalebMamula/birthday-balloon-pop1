@@ -13,8 +13,7 @@
         "customBlock.ts",
         "main.py",
         "customBlock1.ts",
-        "customBlock2.ts",
-        "customBlock3.ts"
+        "customBlock2.ts"
     ],
     "testFiles": [
         "test.ts"
