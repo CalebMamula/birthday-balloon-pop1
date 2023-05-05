@@ -124,6 +124,13 @@ function createDart () {
     myDart.angle = 75
     myDart.angle += 15
 }
+let myDart: Dart = null
+Background.testBlock()
+Balloons.importBalloons()
+Balloons.balloonGrid()
+Animation.balloonAnimation()
+createDart()
+
 ```
 
 ```blockconfig.global
