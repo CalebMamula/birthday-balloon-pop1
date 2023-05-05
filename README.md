@@ -118,9 +118,7 @@ createDart()
 ```
 
 ```blockconfig.global
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    myDart.throwDart()
-})
+
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
 })
