@@ -134,7 +134,7 @@ createDart()
 ```
 
 ```blockconfig.global
-myDart = null
+myDart = 23
 function createDart () {
     myDart = darts.create(img`
         . . . . . . . . . . . . . . . . 
