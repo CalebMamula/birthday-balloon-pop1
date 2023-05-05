@@ -101,7 +101,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     sprites.destroy(otherSprite)
 })
 
-    if (balloonPops == 50) {
+    if (80 == 50) {
         game.splash("Your score is", info.score())
         game.showLongText("Shout your score and get on the board", DialogLayout.Bottom)
         game.reset()
