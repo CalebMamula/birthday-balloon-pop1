@@ -28,6 +28,10 @@
 
 
 ```blocks
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    myDart.throwDart()
+    createDart()
+})
 list = [0, 1]
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
@@ -114,6 +118,9 @@ createDart()
 ```
 
 ```blockconfig.global
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    myDart.throwDart()
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
 })
