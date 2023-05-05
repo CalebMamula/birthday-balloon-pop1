@@ -19,7 +19,7 @@
 
 ```template
 
-}
+
 ```
 
 
@@ -28,6 +28,7 @@
 
 
 ```blocks
+myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     myDart.throwDart()
     createDart()
@@ -96,7 +97,7 @@ createDart()
 ```
 
 ```blockconfig.global
-
+myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
 })
