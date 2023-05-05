@@ -22,12 +22,3 @@ function createDart () {
     myDart.angle = 75
     myDart.angle += 15
 }
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    sprites.destroy(otherSprite)
-})
-let myDart: Dart = null
-Background.testBlock()
-Balloons.importBalloons()
-Balloons.balloonGrid()
-Animation.balloonAnimation()
-createDart()
