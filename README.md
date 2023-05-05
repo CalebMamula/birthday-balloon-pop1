@@ -45,6 +45,9 @@ function createDart () {
 
 
 ```blocks
+if(1==1){
+
+}
 myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     myDart.throwDart()
@@ -102,6 +105,12 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     myDart.angle += 15
 
 
+
+    if (sprites.allOfKind(SpriteKind.Enemy).length == 0) {
+        game.splash("Your score is", info.score())
+        game.showLongText("Shout your score and get on the board", DialogLayout.Bottom)
+        game.reset()
+    }
 
 
 ```
