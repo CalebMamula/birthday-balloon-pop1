@@ -2,7 +2,7 @@
 
 namespace Functions {
     //% block="testing"
-    export function balloonAnimation(): void {
+    export function createDart(): void {
      
     myDart = darts.create(img`
         . . . . . . . . . . . . . . . . 
