@@ -55,7 +55,6 @@ let list = []
 
 }
 
-function createDart () {
     myDart = darts.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -78,7 +77,7 @@ function createDart () {
     myDart.setTrace()
     myDart.angle = 75
     myDart.angle += 15
-}
+
 let myDart: Dart = null
 Background.testBlock()
 Balloons.importBalloons()
