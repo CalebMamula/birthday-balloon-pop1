@@ -1,5 +1,5 @@
 ### @explicitHints true
-# Code Ninjas Unofficial GBS (Hiding Ninjas)
+# Birthday Balloon Pop!
 
 
 ```assetjson
@@ -124,7 +124,7 @@ scene.onHitWall(SpriteKind.Player, function (sprite, location) {
 })
 ```
 
-## Introduction @showdialog
+## Time To Make A Birthday Game! @showdialog
 Birthday Game
 ![Game Example](https://raw.githubusercontent.com/CalebMamula/cn-ninja-invaders-gbs/master/images./ninja-invader-gif.gif)
 
