@@ -134,6 +134,7 @@ createDart()
 ```
 
 ```blockconfig.global
+myDart = null
 function createDart () {
     myDart = darts.create(img`
         . . . . . . . . . . . . . . . . 
