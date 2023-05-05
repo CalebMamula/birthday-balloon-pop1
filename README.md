@@ -85,6 +85,9 @@ Balloons.balloonGrid()
 Animation.balloonAnimation()
 createDart()
 info.setScore(0)
+forever(function () {
+	
+})
 
 ```
 
@@ -102,7 +105,11 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 
 
 ```
-
+```customts
+scene.onHitWall(SpriteKind.Player, function (sprite, location) {
+    sprite.destroy()
+})
+```
 
 ## Introduction @showdialog
 Birthday Game
