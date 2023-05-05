@@ -101,11 +101,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     sprites.destroy(otherSprite)
 })
 
-    myDart.angle = 75
-    myDart.angle += 15
-
-
-
     if (sprites.allOfKind(SpriteKind.Enemy).length == 0) {
         game.splash("Your score is", info.score())
         game.showLongText("Shout your score and get on the board", DialogLayout.Bottom)
