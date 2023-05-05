@@ -84,7 +84,7 @@ Balloons.importBalloons()
 Balloons.balloonGrid()
 Animation.balloonAnimation()
 createDart()
-info.setScore(1000 - game.runtime() / 100)
+info.setScore(0)
 
 ```
 
