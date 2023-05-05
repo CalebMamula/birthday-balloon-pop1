@@ -93,13 +93,6 @@ myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
 })
-myDart = 23
-
-}
-
-```
-
-```customts
 function createDart () {
     myDart = darts.create(img`
         . . . . . . . . . . . . . . . . 
