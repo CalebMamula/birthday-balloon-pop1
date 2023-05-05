@@ -5,8 +5,8 @@ namespace Balloons {
     export function balloonGrid(): void {
         sprites.destroyAllSpritesOfKind(SpriteKind.Food)
 
-                let list = [
-                    img`
+        let list = [
+            img`
     . . . . . . . . . . . . . . . . 
     . . . . . 9 9 9 9 . . . . . . . 
     . . . . 9 9 9 9 9 9 9 . . . . . 
@@ -24,7 +24,7 @@ namespace Balloons {
     . . . . . 8 . 9 . 9 . . . . . . 
     . . . . . . . . . . . . . . . . 
     `,
-                    img`
+            img`
     . . . . . . . . . . . . . . . . 
     . . . . . 3 3 3 3 . . . . . . . 
     . . . . 3 3 3 3 3 3 3 . . . . . 
@@ -42,7 +42,7 @@ namespace Balloons {
     . . . . . b . 3 . 3 . . . . . . 
     . . . . . . . . . . . . . . . . 
     `,
-                    img`
+            img`
     . . . . . . . . . . . . . . . . 
     . . . . . 7 7 7 7 . . . . . . . 
     . . . . 7 7 7 7 7 7 7 . . . . . 
@@ -60,7 +60,7 @@ namespace Balloons {
     . . . . . 6 . 7 . 7 . . . . . . 
     . . . . . . . . . . . . . . . . 
     `,
-                    img`
+            img`
     . . . . . . . . . . . . . . . . 
     . . . . . 5 5 5 5 . . . . . . . 
     . . . . 5 5 5 5 5 5 5 . . . . . 
@@ -78,7 +78,7 @@ namespace Balloons {
     . . . . . 4 . 5 . 5 . . . . . . 
     . . . . . . . . . . . . . . . . 
     `,
-                    img`
+            img`
     . . . . . . . . . . . . . . . . 
     . . . . . 2 2 2 2 . . . . . . . 
     . . . . 2 2 2 2 2 2 2 . . . . . 
@@ -96,20 +96,21 @@ namespace Balloons {
     . . . . . e . 2 . 2 . . . . . . 
     . . . . . . . . . . . . . . . . 
     `
-                ]
+        ]
 
-            
-        
 
-    let balloon = null
+
+
+        let balloon = null
         for (let row = 0; row <= 4; row++) {
             for (let column = 0; column <= 9; column++) {
                 balloon = sprites.create(list._pickRandom(), SpriteKind.Player)
                 tiles.placeOnTile(balloon, tiles.getTileLocation(column, row))
             }
-        }}
+        }
+    }
 }
-    
+
 
 namespace Balloons {
     //% block="import ballons assets [1,2,3,4,5] as type [Enemy]"
