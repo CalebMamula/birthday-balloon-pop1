@@ -1,4 +1,4 @@
-//% weight=100 color=#609dcc icon="\uf03e"
+//% weight=100 color=#ebcc34 icon="\uf03e"
 namespace Background {
     //% block="set background image and size"
     export function testBlock(): void {
