@@ -110,11 +110,14 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     }
 })
 
-if (80 == 50) {
-    game.splash("Your score is", info.score())
-    game.showLongText("Shout your score and get on the board", DialogLayout.Bottom)
-    game.reset()
- }
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite)
+    if (!(mySprite.overlapsWith(otherSprite))) {
+        game.splash("Your score is", info.score())
+        game.showLongText("Shout your score and get on the board", DialogLayout.Bottom)
+        game.reset()
+    }
+})
 
 
 ```
