@@ -111,7 +111,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     }
 })
 
-
+    myDart.angle = 75
+    myDart.angle += 15
 ```
 
 ```customts
