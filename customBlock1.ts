@@ -214,3 +214,5 @@ namespace Balloons {
 
     }
 }
+
+let balloonCount = 50
