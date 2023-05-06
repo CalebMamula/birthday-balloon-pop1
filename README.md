@@ -98,17 +98,10 @@ forever(function () {
 ```blockconfig.global
 info.setScore(1000 - game.runtime() / 100)
 myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    sprites.destroy(otherSprite)
-})
 
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
-    if (sprites.allOfKind(SpriteKind.Enemy).length == 0) {
-        game.splash("Your score is", info.score())
-        game.showLongText("Shout your score and get on the board", DialogLayout.Bottom)
-        game.reset()
-    }
+
 })
 
     myDart.angle = 75
