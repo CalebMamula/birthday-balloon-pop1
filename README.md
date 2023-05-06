@@ -117,7 +117,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 scene.onHitWall(SpriteKind.Player, function (sprite, location) {
     sprite.destroy()
 })
-var balloonsRemaining = 0
+
 ```
 
 ## Time To Make A Birthday Game! @showdialog
