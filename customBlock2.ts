@@ -2,6 +2,7 @@
 
 namespace Animation {
     //% block="animate all sprites of type [Enemy] on screen"
+    
     export function balloonAnimation(): void {
         sprites.destroyAllSpritesOfKind(SpriteKind.Player)
 
@@ -100,7 +101,7 @@ namespace Animation {
 
 
 
-
+        
         let balloon = null
         for (let row = 0; row <= 4; row++) {
             for (let column = 0; column <= 9; column++) {
