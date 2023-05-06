@@ -55,7 +55,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 list = [0, 1]
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    sprites.destroy(otherSprite)
+    
 })
 
     myDart = darts.create(img`
@@ -79,7 +79,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     myDart.controlWithArrowKeys()
     myDart.setTrace()
     myDart.angle = 75
-    myDart.angle += 15
+    
 
 let myDart: Dart = null
 Background.testBlock()
@@ -88,7 +88,7 @@ Balloons.balloonGrid()
 Balloons.updateBalloons()
 Animation.balloonAnimation()
 createDart()
-info.setScore(0)
+
 forever(function () {
 	
 })
@@ -96,7 +96,9 @@ forever(function () {
 ```
 
 ```blockconfig.global
+forever(function(){
 info.setScore(1000 - game.runtime() / 100)
+)}
 myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
 
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
