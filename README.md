@@ -122,8 +122,12 @@ info.setLife(50)
 game.setGameOverMessage(true, "Your score is " + info.score())
 ```
 
-## Time To Make A Birthday Game! @showdialog
-Birthday Game
-![Game Example](https://raw.githubusercontent.com/CalebMamula/cn-ninja-invaders-gbs/master/images./ninja-invader-gif.gif)
+## 
+![Game Example](https://raw.githubusercontent.com/CalebMamula/birthday-balloon-pop/master/images/happy-birthday-cat.gif)
 
+## There's No Party Like A Birthday Party! @showdialog
+![Game Example](https://raw.githubusercontent.com/CalebMamula/birthday-balloon-pop/master/images/cute-dog-bd.gif)
+## 
+![Game Example](https://raw.githubusercontent.com/CalebMamula/birthday-balloon-pop/master/images/happy-birthday-cat.gif)
+![Game Example](https://raw.githubusercontent.com/CalebMamula/birthday-balloon-pop/master/images/dog-happy-birthday.gif)
 
