@@ -1,4 +1,4 @@
-//% weight=99 color=#f70707 icon="\ue2e4"
+//% weight=99 color=#f70707 icon="\uf1e2"
 
 namespace Balloons {
     //% block="create randomized balloon grid"
