@@ -2,6 +2,7 @@
 namespace Background {
     //% block="set background image and size"
     export function testBlock(): void {
+        game.splash(balloonCount)
         tiles.setCurrentTilemap(tilemap`level1`)
         scene.setBackgroundImage(img`
         ccccccccbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbcbcbccccccc
