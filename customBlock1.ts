@@ -218,7 +218,7 @@ namespace Balloons {
 namespace Balloons {
     //% block="update balloonAmount by [-1]"
     export function updateBalloons(): void {
-    balloonAmount -= 1
+    balloonCount -= 1
     
     
     }
