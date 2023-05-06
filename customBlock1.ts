@@ -219,9 +219,7 @@ namespace Balloons {
     //% block="update balloonAmount by [-1]"
     export function updateBalloons(): void {
     balloonAmount -= 1
-    if(balloonAmount == 0){
-    game.splash("You win!!!!")
-    }
+    
     
     }
 
