@@ -110,21 +110,14 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     }
 })
 
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
-    sprites.destroy(otherSprite)
-    if (!(mySprite.overlapsWith(otherSprite))) {
-        game.splash("Your score is", info.score())
-        game.showLongText("Shout your score and get on the board", DialogLayout.Bottom)
-        game.reset()
-    }
-})
-
 
 ```
+
 ```customts
 scene.onHitWall(SpriteKind.Player, function (sprite, location) {
     sprite.destroy()
 })
+var balloonsRemaining = 0
 ```
 
 ## Time To Make A Birthday Game! @showdialog
