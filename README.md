@@ -45,9 +45,7 @@ function createDart () {
 
 
 ```blocks
-if(1==1){
 
-}
 myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     myDart.throwDart()
@@ -92,13 +90,19 @@ createDart()
 forever(function () {
 	
 })
-
+info.onLifeZero(function () {
+   
+})
 ```
 
 ```blockconfig.global
 forever(function(){
 info.setScore(1000 - game.runtime() / 100)
 )}
+info.onLifeZero(function () {
+    game.setGameOverEffect(true, effects.confetti)
+    game.gameOver(true)
+})
 myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
 
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
