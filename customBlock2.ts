@@ -1,4 +1,4 @@
-//% weight=99 color=#078a1d icon="\uf045"
+//% weight=99 color=#078a1d icon="\uf008"
 
 namespace Animation {
     //% block="animate all sprites of type [Enemy] on screen"
