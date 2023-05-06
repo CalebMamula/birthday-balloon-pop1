@@ -216,3 +216,16 @@ namespace Balloons {
 }
 
 
+//Below is the code that is broken. Need to figure out with part.
+<!-- namespace Balloons {
+    //% block="update balloonAmount by [-1]"
+    export function updateBalloons(): void {
+    balloonCount -= 1
+    
+    
+    }
+
+
+
+let balloonCount = 50
+ -->
