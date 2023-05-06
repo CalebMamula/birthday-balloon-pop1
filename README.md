@@ -121,10 +121,6 @@ scene.onHitWall(SpriteKind.Player, function (sprite, location) {
 info.setLife(50)
 game.setGameOverMessage(true, "Your score is " + info.score())
 ```
-
-## 
-![Game Example](https://raw.githubusercontent.com/CalebMamula/birthday-balloon-pop/master/images/happy-birthday-cat.gif)
-
 ## There's No Party Like A Birthday Party! @showdialog
 ![Game Example](https://raw.githubusercontent.com/CalebMamula/birthday-balloon-pop/master/images/cute-dog-bd.gif)
 ## 
