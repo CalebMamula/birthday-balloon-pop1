@@ -4,7 +4,7 @@ namespace Balloons {
     //% block="create randomized balloon grid"
     export function balloonGrid(): void {
         sprites.destroyAllSpritesOfKind(SpriteKind.Food)
-
+        
         let list = [
             img`
     . . . . . . . . . . . . . . . . 
@@ -98,8 +98,8 @@ namespace Balloons {
     `
         ]
 
-
-
+        
+        
 
         let balloon = null
         for (let row = 0; row <= 4; row++) {
@@ -115,6 +115,10 @@ namespace Balloons {
 namespace Balloons {
     //% block="import ballons assets [1,2,3,4,5] as type [Enemy]"
     export function importBalloons(): void {
+    
+
+
+        
         let balloon1 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . 9 9 9 9 . . . . . . . 
@@ -211,16 +215,13 @@ namespace Balloons {
     `, SpriteKind.Food)
         balloon5.setPosition(140, 50)
 
-
-    }
-namespace Balloons {
-    //% block="update balloonAmount by [-1]"
-        export function updateBalloons(): void {
-            balloonCount -= 1
-            game.splash(balloonCount)
     }
 }
 
-
-
-
+namespace Balloons {
+    //% block="update balloonAmount by [-1]"
+    export function updateBalloons(): void {
+ 
+        game.splash("test success)
+    }
+}
