@@ -222,8 +222,8 @@ namespace Balloons {
 namespace Balloons {
     //% block="update balloonAmount by [-1]"
     export function updateBalloons(): void {
- 
-        game.splash("test success")
+
+    info.changeScore(-1)
 
     }
 }
