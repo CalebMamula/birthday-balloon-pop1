@@ -119,6 +119,7 @@ scene.onHitWall(SpriteKind.Player, function (sprite, location) {
     sprite.destroy()
 })
 info.setLife(50)
+game.setGameOverMessage(true, "Your score is " + info.score())
 ```
 
 ## Time To Make A Birthday Game! @showdialog
