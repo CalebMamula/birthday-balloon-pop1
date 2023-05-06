@@ -115,8 +115,6 @@ namespace Balloons {
 namespace Balloons {
     //% block="import ballons assets [1,2,3,4,5] as type [Enemy]"
     export function importBalloons(): void {
-        balloonCount += 1
-        game.splash(balloonCount)
         let balloon1 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . 9 9 9 9 . . . . . . . 
@@ -216,5 +214,15 @@ namespace Balloons {
 
     }
 }
+
+namespace Balloons {
+    //% block="update balloonAmount by [-1]"
+    export function importBalloons(): void {
+    balloonAmount -= 0
+    
+    
+    }
+
+
 
 let balloonCount = 50
