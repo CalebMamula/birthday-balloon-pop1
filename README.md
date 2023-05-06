@@ -118,7 +118,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 scene.onHitWall(SpriteKind.Player, function (sprite, location) {
     sprite.destroy()
 })
-
+info.setLife(50)
 ```
 
 ## Time To Make A Birthday Game! @showdialog
