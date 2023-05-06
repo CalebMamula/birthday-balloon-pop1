@@ -213,11 +213,12 @@ namespace Balloons {
 
 
     }
-//% block="update balloonAmount by [-1]"
-export function updateBalloons(): void {
-     balloonCount -= 1
-     game.splash(balloonCount)
-}
+namespace Balloons {
+    //% block="update balloonAmount by [-1]"
+        export function updateBalloons(): void {
+            balloonCount -= 1
+            game.splash(balloonCount)
+    }
 }
 
 
