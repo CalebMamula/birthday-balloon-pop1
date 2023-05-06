@@ -2,7 +2,6 @@
 namespace Background {
     //% block="set background image and size"
     export function testBlock(): void {
-     
         tiles.setCurrentTilemap(tilemap`level1`)
         scene.setBackgroundImage(img`
         ccccccccbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbcbcbccccccc
@@ -126,5 +125,8 @@ namespace Background {
         dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
         dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
         `)
+        if(balloonCount == 50){
+            game.splash("Hi")
+        }
     }
 }
