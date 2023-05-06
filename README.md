@@ -85,6 +85,7 @@ let myDart: Dart = null
 Background.testBlock()
 Balloons.importBalloons()
 Balloons.balloonGrid()
+Balloons.updateBalloons()
 Animation.balloonAnimation()
 createDart()
 info.setScore(0)
