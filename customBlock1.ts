@@ -223,7 +223,7 @@ namespace Balloons {
     //% block="update balloonAmount by [-1]"
     export function updateBalloons(): void {
 
-    info.changeScore(-1)
+    info.changeScoreBy(-1)
 
     }
 }
