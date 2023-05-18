@@ -90,15 +90,18 @@ info.changeLifeBy(-1)
 forever(function () {
 	
 })
+forever(function () {
+    info.setScore(1000 - game.runtime() / 100)
+})
 info.onLifeZero(function () {
    
 })
 ```
 
 ```blockconfig.global
-forever(function(){
-info.setScore(1000 - game.runtime() / 100)
-)}
+forever(function () {
+    info.setScore(1000 - game.runtime() / 100)
+})
 info.onLifeZero(function () {
     game.setGameOverEffect(true, effects.confetti)
     game.gameOver(true)
