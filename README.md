@@ -116,6 +116,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 scene.onHitWall(SpriteKind.Player, function (sprite, location) {
     sprite.destroy()
 })
+game.setGameOverMessage(true, "Great Work!")
 info.setLife(50)
 game.setGameOverMessage(true, "Your score is " + info.score())
 ```
