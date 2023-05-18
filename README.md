@@ -86,7 +86,7 @@ Balloons.balloonGrid()
 Balloons.updateBalloons()
 Animation.balloonAnimation()
 createDart()
-
+info.changeLifeBy(-1)
 forever(function () {
 	
 })
@@ -107,7 +107,6 @@ myDart = darts.create(assets.image`dart`, SpriteKind.Player, 80, 110)
 
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
-
 })
 
     myDart.angle = 75
