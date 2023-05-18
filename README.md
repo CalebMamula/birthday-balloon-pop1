@@ -90,9 +90,6 @@ info.changeLifeBy(-1)
 forever(function () {
 	
 })
-forever(function () {
-    info.setScore(1000 - game.runtime() / 100)
-})
 info.onLifeZero(function () {
    
 })
