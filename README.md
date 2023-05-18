@@ -86,7 +86,6 @@ Balloons.balloonGrid()
 Balloons.updateBalloons()
 Animation.balloonAnimation()
 createDart()
-info.changeLifeBy(-1)
 forever(function () {
 	
 })
