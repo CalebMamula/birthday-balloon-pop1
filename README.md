@@ -1,3 +1,5 @@
+http://arcade.makecode.com/#tutorial:https://github.com/calebmamula/birthday-balloon-pop
+
 ### @explicitHints true
 # Birthday Balloon Pop!
 
